@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ThirdScene.unity
     guid: ce43946f4377888429f2d8dd10537d96
+  - enabled: 1
+    path: Assets/Scenes/TatemonoScene.unity
+    guid: 1812274dac2eec14a9ca453c1d96e12c
   m_configObjects: {}
