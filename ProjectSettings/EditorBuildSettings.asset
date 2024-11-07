@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TatemonoScene.unity
     guid: 1812274dac2eec14a9ca453c1d96e12c
+  - enabled: 1
+    path: Assets/Scenes/FourthScene.unity
+    guid: 5a94fbbc89f7be944a445ed66c3c5cf4
   m_configObjects: {}
