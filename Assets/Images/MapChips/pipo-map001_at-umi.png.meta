@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3b3213e13bd86d84b97df87caafd5d00
+guid: 36f1b8e794038b646a365e9e7cb06478
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pipo-map001_at-miti_0
+      name: pipo-map001_at-umi_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 152
+        y: 160
         width: 40
-        height: 48
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de50d82ede7089a458f08042f8a61957
-      internalID: -1194565806
+      spriteID: 1eefd2f858bb4a54aa7a55a06a331d47
+      internalID: -1006372644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-map001_at-miti_1
+      name: pipo-map001_at-umi_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 104
+        y: 120
         width: 40
-        height: 48
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75a3e1f8ea61e8d4b99d6ad3df067ac5
-      internalID: -1255307729
+      spriteID: 8a2b26edb5f69e04389586f5baa8acb6
+      internalID: 703801999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-map001_at-miti_2
+      name: pipo-map001_at-umi_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 56
+        y: 80
         width: 40
-        height: 48
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de2b3f0c5eb2a1d43aa617f2d9d4940f
-      internalID: 544609614
+      spriteID: 4e7850d668ae454438a30dcf2b99ac5b
+      internalID: -1823338393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-map001_at-miti_3
+      name: pipo-map001_at-umi_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 8
+        y: 40
         width: 40
-        height: 48
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99dd5beaf32f868478b8aac322a15b33
-      internalID: 1715011731
+      spriteID: a76883ce5d5c38d46adecb81a5c89592
+      internalID: 746454051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipo-map001_at-umi_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6f89e73fbeed946b892c30e286cff9
+      internalID: 1106378527
       vertices: []
       indices: 
       edges: []
@@ -191,10 +212,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pipo-map001_at-miti_0: -1194565806
-      pipo-map001_at-miti_1: -1255307729
-      pipo-map001_at-miti_2: 544609614
-      pipo-map001_at-miti_3: 1715011731
+      pipo-map001_at-umi_0: -1006372644
+      pipo-map001_at-umi_1: 703801999
+      pipo-map001_at-umi_2: -1823338393
+      pipo-map001_at-umi_3: 746454051
+      pipo-map001_at-umi_4: 1106378527
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
