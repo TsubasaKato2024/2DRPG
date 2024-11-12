@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
-public class ControlsButton : MonoBehaviour
+public class ControlButton : MonoBehaviour
 {
     private void Start()
     {
@@ -11,7 +11,7 @@ public class ControlsButton : MonoBehaviour
 
         button.onClick.AddListener(() =>
         {
-            SceneManager.LoadScene("ControlsScreen");
+            SceneManager.LoadScene("ControlScene");
         });
     }
 }

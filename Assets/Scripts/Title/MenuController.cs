@@ -61,7 +61,7 @@ public class MenuController : MonoBehaviour
 
     public void ShowControls()
     {
-        SceneManager.LoadScene("ControlsScreen");
+        SceneManager.LoadScene("ControlScene");
     }
 
     public void QuitGame()
