@@ -8,7 +8,7 @@ public class Scene_change : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("SecondScene");//移動先のシーンの名前を必ずafterにしてください！
+            SceneManager.LoadScene("Episode2Scene");//移動先のシーンの名前を必ずafterにしてください！
         }
     }
 
