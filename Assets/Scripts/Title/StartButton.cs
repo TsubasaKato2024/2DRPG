@@ -30,6 +30,6 @@ public class StartButton : MonoBehaviour
         }
 
         // シーンを切り替える
-        SceneManager.LoadScene("FirstScene");
+        SceneManager.LoadScene("EpisodeScene");
     }
 }
