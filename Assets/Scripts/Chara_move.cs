@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class chara_move : MonoBehaviour
+public class Chara_move : MonoBehaviour
 {
     private float speed = 0.01f; //floatは小数点
     private Animator animator;

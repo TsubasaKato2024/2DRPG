@@ -44,8 +44,12 @@ public class MessageWindow : MonoBehaviour
         if (!isTyping)
         {
             ShowMessage("おじいちゃんは目を覚ました。昔、自分が勇者だった頃を思い出しながら・・・");
+
             // メッセージがすべて表示されたら、次のシーンに進むために遅延する
             StartCoroutine(WaitAndLoadScene());
+
+            // ボタンを削除
+            Destroy(nextButton.gameObject);
         }
     }
 
