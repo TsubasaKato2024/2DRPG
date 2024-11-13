@@ -9,7 +9,7 @@ public class Talk : MonoBehaviour
     public Text Text;
 
     [SerializeField]
-    string words = "おじいちゃんが勇者だった時 金魚の敵を倒した話";
+    string words = "";
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
