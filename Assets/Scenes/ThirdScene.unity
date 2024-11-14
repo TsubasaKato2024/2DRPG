@@ -7345,7 +7345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 20981675}
   Text: {fileID: 1499137672}
-  words: "\u9375\u304C\u5FC5\u8981"
+  words: "\u9375\u304C\u5FC5\u8981\u3060\u3002"
 --- !u!50 &418013995
 Rigidbody2D:
   serializedVersion: 4
