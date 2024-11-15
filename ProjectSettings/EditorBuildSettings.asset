@@ -42,6 +42,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Tatemono2Scene.unity
     guid: 57b97cbd7922fe246a82c4de2276222f
   - enabled: 1
+    path: Assets/Scenes/HashiScene.unity
+    guid: ec6e22177094681498d4647f107a973f
+  - enabled: 1
     path: Assets/Scenes/FourthScene.unity
     guid: 5a94fbbc89f7be944a445ed66c3c5cf4
   - enabled: 1
