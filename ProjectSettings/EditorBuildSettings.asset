@@ -30,6 +30,12 @@ EditorBuildSettings:
     path: Assets/Scenes/ThirdScene.unity
     guid: ce43946f4377888429f2d8dd10537d96
   - enabled: 1
+    path: Assets/Scenes/Third2Scene.unity
+    guid: b59b9cf162fbbb143992ac2057322620
+  - enabled: 1
+    path: Assets/Scenes/Third3Scene.unity
+    guid: 4b27a9b5503649c48ac1334b4feb6145
+  - enabled: 1
     path: Assets/Scenes/TatemonoScene.unity
     guid: 1812274dac2eec14a9ca453c1d96e12c
   - enabled: 1

@@ -6256,7 +6256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 874903373}
   Text: {fileID: 1730280374}
-  words: "\u30A4\u30B9\u306B\u5EA7\u308C"
+  words: "\u30A4\u30B9\u306B\u5411\u304B\u3048\u3002"
 --- !u!1 &1676831866
 GameObject:
   m_ObjectHideFlags: 0

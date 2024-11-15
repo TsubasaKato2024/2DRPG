@@ -583,7 +583,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 010a1376d913e0d49b67798590c248c3, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -594,7 +594,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uFF5E\u64CD\u4F5C\u8AAC\u660E\uFF5E\n\n\u3010\u30E1\u30CB\u30E5\u30FC\u753B\u9762\u306E\u5834\u5408\u3011\n\u2191\u2193\uFF1A\u30AB\u30FC\u30BD\u30EB\u3067\u9078\u629E\nEnter\u30AD\u30FC\uFF1A\u6C7A\u5B9A\n\n\u3010\u30B2\u30FC\u30E0\u753B\u9762\u306E\u5834\u5408\u3011\nWASD\uFF1A\u30AD\u30E3\u30E9\u304C\u6B69\u304F"
+  m_Text: "\uFF5E\u64CD\u4F5C\u8AAC\u660E\uFF5E\n\n\u3010\u30E1\u30CB\u30E5\u30FC\u753B\u9762\u306E\u5834\u5408\u3011\n\u2191\u2193\uFF1A\u30AB\u30FC\u30BD\u30EB\u3067\u9078\u629E\nEnter\u30AD\u30FC\uFF1A\u6C7A\u5B9A\n\n\u3010\u30B2\u30FC\u30E0\u753B\u9762\u306E\u5834\u5408\u3011\nWASD\uFF1A\u30AD\u30E3\u30E9\u304C\u6B69\u304F\nClick
+    : \u6C7A\u5B9A"
 --- !u!222 &1138793002
 CanvasRenderer:
   m_ObjectHideFlags: 0
