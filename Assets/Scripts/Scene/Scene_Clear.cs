@@ -17,14 +17,14 @@ public class Scene_Clear : MonoBehaviour
         {
             Text.text = words;
             dialogue.SetActive(true);
-            StartCoroutine(WaitAndChangeScene(2f)); // 5秒後にシーン遷移
+            StartCoroutine(WaitAndChangeScene(1.5f)); // 1.5秒後にシーン遷移
         }
     }
 
     // コルーチンで指定された時間（秒数）後にシーン遷移
     private IEnumerator WaitAndChangeScene(float waitTime)
     {
-        yield return new WaitForSeconds(waitTime); // 2秒待つ
+        yield return new WaitForSeconds(waitTime); // 1.5秒待つ
         SceneManager.LoadScene("ClearScene"); // シーン遷移
     }
 }

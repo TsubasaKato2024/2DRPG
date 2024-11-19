@@ -3,17 +3,17 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;  // シーン管理用
 using System.Collections;
 
-public class MessageWindow : MonoBehaviour
+public class MessageWindow_Clear : MonoBehaviour
 {
     public Text messageText;  // メッセージテキスト
-    public Button nextButton; // 次へボタン
-
     private string currentMessage;  // 現在表示中のメッセージ
-    private bool isTyping = false;  // タイピング中かどうか
 
     void Start()
     {
-        nextButton.onClick.AddListener(OnNextButtonClicked);
+        // メッセージの表示を開始
+        ShowMessage("村は平和を取り戻し、" +
+            "勇者は英雄として迎えられました。" +
+            "　～　　T  H  E   E  N  D　　～　");
     }
 
     // メッセージを表示するメソッド
@@ -27,40 +27,23 @@ public class MessageWindow : MonoBehaviour
     // メッセージを1文字ずつタイプするコルーチン
     private IEnumerator TypeMessage()
     {
-        isTyping = true;
-
         foreach (char letter in currentMessage)
         {
             messageText.text += letter;
             yield return new WaitForSeconds(0.1f);  // 文字を表示する間隔
         }
 
-        isTyping = false;
-    }
-
-    // 次へボタンが押されたとき
-    private void OnNextButtonClicked()
-    {
-        if (!isTyping)
-        {
-            ShowMessage("おじいちゃんは目を覚ました。" +
-                "昔、自分が勇者だった頃を思い出しながら・・・");
-
-            // メッセージがすべて表示されたら、次のシーンに進むために遅延する
-            StartCoroutine(WaitAndLoadScene());
-
-            // ボタンを削除
-            Destroy(nextButton.gameObject);
-        }
+        // メッセージが完了した後、シーン遷移を開始
+        StartCoroutine(WaitAndLoadScene());
     }
 
     // 10秒待ってから次のシーンに遷移するコルーチン
     private IEnumerator WaitAndLoadScene()
     {
-        // 10秒待機
-        yield return new WaitForSeconds(8);
+        // 10秒待機（メッセージが表示された後に次のシーンへ遷移）
+        yield return new WaitForSeconds(5);
 
         // 次のシーンに遷移
-        SceneManager.LoadScene("FirstScene");  // 次のシーン名を指定
+        SceneManager.LoadScene("TitleScene");  // 次のシーン名を指定
     }
 }

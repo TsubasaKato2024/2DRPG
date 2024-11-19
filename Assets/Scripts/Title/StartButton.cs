@@ -19,15 +19,15 @@ public class StartButton : MonoBehaviour
 
     public void StartGame()
     {
-        // 効果音を再生
-        if (soundEffect != null)
-        {
-            audioSource.PlayOneShot(soundEffect);
-        }
-        else
-        {
-            Debug.LogWarning("効果音が設定されていません！"); // 警告メッセージ
-        }
+        //// 効果音を再生
+        //if (soundEffect != null)
+        //{
+        //    audioSource.PlayOneShot(soundEffect);
+        //}
+        //else
+        //{
+        //    Debug.LogWarning("効果音が設定されていません！"); // 警告メッセージ
+        //}
 
         // シーンを切り替える
         SceneManager.LoadScene("EpisodeScene");
