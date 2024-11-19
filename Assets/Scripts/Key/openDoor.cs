@@ -18,7 +18,7 @@ public class openDoor : MonoBehaviour
             Text.text = words;
             dialogue.SetActive(true);
 
-            if (treasure.instance.getkey == true)// 鍵を持っていたら
+            if (treasure.instance.getkey == true)// 鍵を持っていたら    
             {
                 dialogue.SetActive(false);
                 gameObject.SetActive(false);// 扉を削除
