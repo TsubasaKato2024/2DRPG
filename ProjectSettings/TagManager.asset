@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Boss
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Boss
   - Water
   - UI
   - 
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 1973251173
+    locked: 0
+  - name: Weapon
+    uniqueID: 2660619291
     locked: 0
