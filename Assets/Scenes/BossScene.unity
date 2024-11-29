@@ -7745,7 +7745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62fb306956c55ff469cf106ffa62a8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 2.5
+  attackRange: 2.8
   attackDamage: 10
   BossLayer:
     serializedVersion: 2
