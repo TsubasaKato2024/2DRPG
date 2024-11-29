@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SwordAttack : MonoBehaviour
 {
-    public float attackDistance = 3f;  // 突く距離
+    public float attackDistance = 2.5f;  // 突く距離
     public float attackDuration = 0.2f;  // 突くのにかかる時間
     public float returnDuration = 0.2f;  // 元の位置に戻るのにかかる時間
     public float rotationAngle = -60f;    // 回転角度
@@ -12,11 +12,13 @@ public class SwordAttack : MonoBehaviour
     private Vector3 startPosition;  // 初期位置
     private float startRotation;    // 初期回転
 
+    private Transform playerTransform; // プレイヤーのTransform
+
     void Start()
     {
-        // 初期位置と回転を保存
-        startPosition = transform.position;
-        startRotation = transform.rotation.eulerAngles.z;
+        playerTransform = transform.parent; // プレイヤーを親オブジェクトとして設定
+        startPosition = transform.localPosition;  // ローカル位置で初期位置を保存
+        startRotation = transform.localRotation.eulerAngles.z;  // ローカル回転で初期回転を保存
     }
 
     void Update()
@@ -32,8 +34,8 @@ public class SwordAttack : MonoBehaviour
     {
         isAttacking = true;
 
-        // 剣を前方に突き出しながら回転
-        Vector3 targetPosition = startPosition + transform.right * attackDistance;
+        // プレイヤーの前方に剣を移動させる
+        Vector3 targetPosition = playerTransform.position + playerTransform.right * attackDistance; // プレイヤーの前方を基準に移動
         float targetRotation = startRotation + rotationAngle;  // 回転角度
 
         // 突きながら回転する
@@ -42,16 +44,16 @@ public class SwordAttack : MonoBehaviour
         {
             time += Time.deltaTime;
             // 剣の位置を滑らかに移動
-            transform.position = Vector3.Lerp(startPosition, targetPosition, time / attackDuration);
+            transform.localPosition = Vector3.Lerp(startPosition, targetPosition - playerTransform.position, time / attackDuration); // プレイヤー基準で移動
             // 剣の回転を滑らかに変更
             float rotationZ = Mathf.Lerp(startRotation, targetRotation, time / attackDuration);
-            transform.rotation = Quaternion.Euler(0, 0, rotationZ);
+            transform.localRotation = Quaternion.Euler(0, 0, rotationZ);
             yield return null;
         }
 
         // 最終的な位置と回転を正確に設定
-        transform.position = targetPosition;
-        transform.rotation = Quaternion.Euler(0, 0, targetRotation);
+        transform.localPosition = targetPosition - playerTransform.position;
+        transform.localRotation = Quaternion.Euler(0, 0, targetRotation);
 
         // 元の位置と回転に戻す
         time = 0f;
@@ -59,16 +61,16 @@ public class SwordAttack : MonoBehaviour
         {
             time += Time.deltaTime;
             // 剣の位置を滑らかに戻す
-            transform.position = Vector3.Lerp(targetPosition, startPosition, time / returnDuration);
+            transform.localPosition = Vector3.Lerp(targetPosition - playerTransform.position, startPosition, time / returnDuration);
             // 剣の回転を滑らかに戻す
             float rotationZ = Mathf.Lerp(targetRotation, startRotation, time / returnDuration);
-            transform.rotation = Quaternion.Euler(0, 0, rotationZ);
+            transform.localRotation = Quaternion.Euler(0, 0, rotationZ);
             yield return null;
         }
 
         // 最終的な位置と回転を正確に設定
-        transform.position = startPosition;
-        transform.rotation = Quaternion.Euler(0, 0, startRotation);
+        transform.localPosition = startPosition;
+        transform.localRotation = Quaternion.Euler(0, 0, startRotation);
 
         isAttacking = false;
     }
