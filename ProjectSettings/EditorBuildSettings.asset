@@ -51,6 +51,9 @@ EditorBuildSettings:
     path: Assets/Scenes/FifthScene.unity
     guid: 286b3aa4e8d44b442a07e85c1bd77e14
   - enabled: 1
+    path: Assets/Scenes/QuizScene.unity
+    guid: 4c73a3737618e3644a04e06e378927bf
+  - enabled: 1
     path: Assets/Scenes/ClearScene.unity
     guid: 7687299b7e1a818429413525f888e096
   - enabled: 1

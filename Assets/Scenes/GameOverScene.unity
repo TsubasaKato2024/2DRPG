@@ -416,8 +416,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myButton: {fileID: 1774484853}
   gameOverText: {fileID: 1615647727}
-  waitTime: 5
-  blinkInterval: 0.5
+  waitTime: 4
+  blinkInterval: 0.8
 --- !u!4 &677223806
 Transform:
   m_ObjectHideFlags: 0
@@ -491,19 +491,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f4914bf75774bde46a945f0b16589ef6, type: 3}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: c17c79df15f38dd4bab7a69e9fce9b01, type: 3}
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
-    m_MaxSize: 50
+    m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Continuation
+  m_Text: TO BE CONTINUED...
 --- !u!222 &1402788749
 CanvasRenderer:
   m_ObjectHideFlags: 0

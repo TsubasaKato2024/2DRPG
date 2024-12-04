@@ -22947,7 +22947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 1589627817}
   Text: {fileID: 478880599}
-  words: "\u9ED2\u9BC9(\u3053\u304F\u308A)\u3092\u5012\u3057\u305F\u3002"
+  words: "\u9ED2\u9BC9(\u3053\u304F\u308A)\u3068\u6226\u3046"
 --- !u!50 &2042692329
 Rigidbody2D:
   serializedVersion: 4

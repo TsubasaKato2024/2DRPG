@@ -7,8 +7,8 @@ public class ButtonManager : MonoBehaviour
 {
     public Button myButton;  // UIのButton
     public Text gameOverText;  // ゲームオーバーのテキスト
-    public float waitTime = 5f;  // ボタンが表示されるまでの待機時間
-    public float blinkInterval = 0.5f;  // 点滅の間隔
+    public float waitTime = 4f;  // ボタンが表示されるまでの待機時間
+    public float blinkInterval = 0.8f;  // 点滅の間隔
 
     void Start()
     {
